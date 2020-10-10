@@ -60,8 +60,11 @@ const mixedArray = [3,13,74,14,66,15,22,4];
 const isEven = num => Number.isInteger(num/2);
 
 const filterArray = (arr, func) => {
-  return arr.filter(num =>func(num) == true);
+  return arr.filter(num =>func(num));
 }
 
 console.log(filterArray(mixedArray, isEven));
-    
+
+
+
+
