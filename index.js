@@ -6,15 +6,17 @@ const string = "Привет! Как дела?";
 
 let getVowels = (str) => {
 
-let stringArr = [...str];
-const vowels = ['а', 'е', 'ё', 'и', 'о', 'у', 'ю', 'я'];
-var vowelString=[];
+let stringArr = [...str.toLowerCase()];
+const vowels = ['а', 'е', 'ё', 'и', 'ы', 'о', 'у', 'ю', 'я'];
+var vowelString = '';
+var vowelArr = [];
 
-return vowelString = stringArr.filter(char => {
-   for (i=0; i<vowels.length; i++) {if (char == vowels[i]) {
-     console.log(char);
+vowelArr = stringArr.filter(char => {
+   for (i=0; i<vowels.length; i++) {if (char === vowels[i]) {
      return char;
   } } });
+
+ return vowelString = vowelArr.join('');
   
 };
 
